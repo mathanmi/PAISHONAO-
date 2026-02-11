@@ -1,0 +1,30 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header><h1>Order History</h1></header>
+
+<div class="container" id="history"></div>
+
+<script>
+
+let data=JSON.parse(localStorage.getItem("orders"))||[];
+
+let html="";
+
+data.forEach(o=>{
+html+=`<p>
+ID:${o.id} | Server:${o.server}<br>
+Pack:${o.pack} | Price:${o.price}<br>
+</p><hr>`;
+});
+
+document.getElementById("history").innerHTML=html;
+
+</script>
+
+</body>
+</html>

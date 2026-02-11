@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MIRIN HIVA CHOT DALEI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>MIRIN HIVA CHOT DALEI</h1>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="history.html">Order History</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+</header>
+
+<div class="container">
+
+<h2>Enter Game Details</h2>
+
+<input type="text" id="userid" placeholder="Enter User ID">
+<input type="text" id="server" placeholder="Enter Server">
+
+<button onclick="checkID()">Check ID</button>
+
+<p id="checkmsg"></p>
+
+<div id="diamondSection" style="display:none">
+
+<h2>Select Diamond Pack</h2>
+
+<div class="grid">
+<div class="card" onclick="selectPack('Weekly Pass','₹160')">
+<h3>Weekly Pass</h3>
+<span>₹160</span>
+</div>
+
+<div class="card" onclick="selectPack('Twilight Pass','₹850')">
+<h3>Twilight Pass</h3>
+<span>₹850</span>
+</div>
+
+<div class="card" onclick="selectPack('5 Diamonds','₹10')"><h3>5 Diamonds</h3><span>₹10</span></div>
+
+<div class="card" onclick="selectPack('10+1 Diamonds','₹16')"><h3>10+1 Diamonds</h3><span>₹16</span></div>
+
+<div class="card" onclick="selectPack('14 Diamonds','₹30')"><h3>14 Diamonds</h3><span>₹30</span></div>
+
+<div class="card" onclick="selectPack('20+2 Diamonds','₹40')"><h3>20+2 Diamonds</h3><span>₹40</span></div>
+
+<div class="card" onclick="selectPack('42💎💎💎 Diamonds','₹80')"><h3>42 Diamonds</h3><span>₹80</span></div>
+
+<div class="card" onclick="selectPack('51+5 💎💎💎Diamonds','₹100')"><h3>51+5 Diamonds</h3><span>₹100</span></div>
+
+<div class="card" onclick="selectPack('70💎💎💎 Diamonds','₹120')"><h3>70 Diamonds</h3><span>₹120</span></div>
+
+<div class="card" onclick="selectPack('102+10 Diamonds','₹180')"><h3>102+10 Diamonds</h3><span>₹180</span></div>
+
+<div class="card" onclick="selectPack('140 Diamonds','₹250')"><h3>140 Diamonds</h3><span>₹250</span></div>
+
+<div class="card" onclick="selectPack('203+20 Diamonds','₹350')"><h3>203+20 Diamonds</h3><span>₹350</span></div>
+
+<div class="card" onclick="selectPack('284 Diamonds','₹450')"><h3>284 Diamonds</h3><span>₹450</span></div>
+
+<div class="card" onclick="selectPack('303+33 Diamonds','₹500')"><h3>303+33 Diamonds</h3><span>₹500</span></div>
+
+<div class="card" onclick="selectPack('355 Diamonds','₹550')"><h3>355 Diamonds</h3><span>₹550</span></div>
+
+<div class="card" onclick="selectPack('429 Diamonds','₹650')"><h3>429 Diamonds</h3><span>₹650</span></div>
+
+<div class="card" onclick="selectPack('504+66 Diamonds','₹850')"><h3>504+66 Diamonds</h3><span>₹850</span></div>
+
+<div class="card" onclick="selectPack('716 Diamonds','₹999')"><h3>716 Diamonds</h3><span>₹999</span></div>
+
+<div class="card" onclick="selectPack('1007+156 Diamonds','₹1890')"><h3>1007+156 Diamonds</h3><span>₹1890</span></div>
+
+<div class="card" onclick="selectPack('1446 Diamonds','₹2800')"><h3>1446 Diamonds</h3><span>₹2800</span></div>
+
+<div class="card" onclick="selectPack('2015+383 Diamonds','₹4400')"><h3>2015+383 Diamonds</h3><span>₹4400</span></div>
+
+<div class="card" onclick="selectPack('2976 Diamonds','₹5150')"><h3>2976 Diamonds</h3><span>₹5150</span></div>
+
+<div class="card" onclick="selectPack('5035+1007 Diamonds','₹7800')"><h3>5035+1007 Diamonds</h3><span>₹7800</span></div>
+
+<div class="card" onclick="selectPack('7502 Diamonds','₹9500')"><h3>10502 Diamonds</h3><span>₹10500</span></div>
+
+</div>
+
+</div>
+
+</div>
+
+<div id="orderArea"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
